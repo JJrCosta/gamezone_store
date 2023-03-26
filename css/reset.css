@@ -1,0 +1,17 @@
+/*
+---- RESET CSS -----
+*/
+* {
+    margin: 0;
+    padding: 0;
+    border:none;
+    outline: none;
+    background-image:none;
+    box-sizing: border-box;
+    background-color:transparent;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    font-family: 'Gruppo', cursive;
+    text-decoration: none;
+}
