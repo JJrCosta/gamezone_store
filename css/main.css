@@ -1,0 +1,97 @@
+/*
+--- HEADER ---
+*/
+.header .container {
+    width: 100%;
+    background-color: #1B133A;
+    height: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.8);
+}
+.header .container.top {
+    border:none;
+}
+.header .container.navbar {
+    height: 60px;
+}
+/*
+--- HEADER TOP ---
+*/
+.header .container.top,
+.container.top .language-box,
+.container.top .flag,
+.container.top .icons-box,
+.container.top .lang-user,
+.header .container.logo-brands,
+.header .container.logo-brands .logo-brands,
+.container.logo .brands-box {
+    display: flex;
+    align-items: center;
+}
+.header .container.top {
+    justify-content: space-between;
+}
+/*
+--- Icons Box---
+*/
+.container.top .icons-box {
+    width: 300px;
+    justify-content: space-around;
+}
+.icons-box i,
+.user-icon i {
+    color: #C99902;
+    opacity: 0.8;
+    font-size: 26px;
+    cursor: pointer;
+}
+.icons-box i:hover,
+.user-icon i:hover {
+    opacity: 1;
+    transform: scale(1.2);
+    transition: 300ms;
+}
+/*
+--- Language Box---
+*/
+.container.top .lang-user {
+    width: 200px;
+    justify-content: space-around;
+}
+.container.top .language-box {
+    width: 120px;
+    justify-content: space-between;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+}
+.container.top .language-box,
+.container.top .flag {
+    padding: 2px 0;
+    margin: 0 5px;
+}
+.container.top .language-select {
+    color: rgba(255, 255, 255, 0.8);
+}
+/*
+--- Logo Box---
+*/
+.header .container.logo-brands {
+    height: 150px;
+    justify-content: center;
+}
+.container .logo-brands {
+    width: 80%;
+}
+/*
+--- Brands Box---
+*/
+.container.logo-brands .logo-brands {
+    justify-content: space-around;
+    width: 1400px;
+}
+.container.logo-brands .brands-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px 0 10px 0;
+}
+.container.logo-brands .brands-box img {
+    padding: 5px;
+}
