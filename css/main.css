@@ -25,6 +25,7 @@
 }
 .header .container.navbar {
     height: 60px;
+    width: 100%;
 }
 /*
 --- Icons Box---
@@ -65,31 +66,35 @@
     color: #C99902;
 }
 /*
---- Logo Box---
+--- Logo Brands Container ---
 */
-.header .container.logo-brands {
+.header .container.bg-logo-brands {
     height: 150px;
-    justify-content: center;
+    width: 100%;
 }
-.container .logo-brands {
-    width: 80%;
+/*
+--- Logo Box ---
+*/
+.logo-brands .logo > img {
+    height: 165px;
 }
 /*
 --- Brands Box---
 */
-.container.logo-brands .logo-brands {
-    width: 100%;
-}
-.container.logo-brands .brands-box {
+.container.bg-logo-brands .brands-box {
     background-color: rgba(255, 255, 255, 0.4);
     border-radius: 15px 2px 15px 2px;
 }
-.container.logo-brands .brands-box img {
+.container .logo-brands .brands-box > img {
+    height: 80px;
     padding: 5px;
 }
 /*
 --- HEADER Navigation bar ---
 */
+.container.navbar {
+    justify-content: space-between;
+}
 .container.navbar .navmenu {
     margin-left: 50px;
 }
@@ -110,8 +115,11 @@
     background-color: #c99902;
     transition: 400ms;
 }
+/*
+--- HEADER Search bar ---
+*/
 .container.navbar .search-cart {
-    width: 30%;
+    margin: 0 15px;
 }
 .container.navbar .search-bar {
     border: 1px solid rgba(255, 255, 255, 0.8);
@@ -128,6 +136,9 @@
     font-size: 20px;
     cursor: pointer;
 }
+/*
+--- HEADER Cart box ---
+*/
 .container.navbar .cart i {
     font-size: 30px;
     color: #C99902;
@@ -140,4 +151,48 @@
     color: #fff;
     font-size: 12px;
     justify-content: center;
+}
+/*
+--- MOBILE BUTTON ---
+*/
+.mobile-btn {
+    border: 1px solid #C99902;
+    border-radius: 5px;
+    padding: -2px 5px;
+    display: none;
+}
+.mobile-btn i {
+    font-size: 30px;
+    color: #C99902;
+}
+
+@media (max-width: 1080px) {
+    .search-bar {
+        display: none;
+    }
+    .brands-box {
+        display: none;
+    }
+}
+@media (max-width: 769px) {
+    .container.navbar .navmenu {
+        margin-left: 15px;
+    }
+}
+@media (max-width: 426px) {
+    .navbar .navmenu {
+        display: none;
+    }
+    .logo-brands .logo>img,
+    .header .container.bg-logo-brands {
+        height: 80px;
+    }
+    .container.navbar,
+    .search-cart {
+        width: 90%;
+        justify-content: space-between;
+    }
+    .mobile-btn {
+        display: block;
+    }
 }
