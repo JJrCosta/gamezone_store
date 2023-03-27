@@ -1,4 +1,17 @@
 /*
+--- FLEX SETUP ---
+*/
+.flx-align-center {
+    display: flex;
+    align-items: center;
+}
+.flx-spc-btw {
+    justify-content: space-between;
+}
+.flx-spc-aron {
+    justify-content: space-around;
+}
+/*
 --- HEADER ---
 */
 .header .container {
@@ -14,28 +27,10 @@
     height: 60px;
 }
 /*
---- HEADER TOP ---
-*/
-.header .container.top,
-.container.top .language-box,
-.container.top .flag,
-.container.top .icons-box,
-.container.top .lang-user,
-.header .container.logo-brands,
-.header .container.logo-brands .logo-brands,
-.container.logo .brands-box {
-    display: flex;
-    align-items: center;
-}
-.header .container.top {
-    justify-content: space-between;
-}
-/*
 --- Icons Box---
 */
 .container.top .icons-box {
     width: 300px;
-    justify-content: space-around;
 }
 .icons-box i,
 .user-icon i {
@@ -55,11 +50,9 @@
 */
 .container.top .lang-user {
     width: 200px;
-    justify-content: space-around;
 }
 .container.top .language-box {
     width: 120px;
-    justify-content: space-between;
     border: 1px solid rgba(255, 255, 255, 0.8);
     border-radius: 20px;
 }
@@ -69,7 +62,7 @@
     margin: 0 5px;
 }
 .container.top .language-select {
-    color: rgba(255, 255, 255, 0.8);
+    color: #C99902;
 }
 /*
 --- Logo Box---
@@ -85,13 +78,66 @@
 --- Brands Box---
 */
 .container.logo-brands .logo-brands {
-    justify-content: space-around;
-    width: 1400px;
+    width: 100%;
 }
 .container.logo-brands .brands-box {
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 10px 0 10px 0;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 15px 2px 15px 2px;
 }
 .container.logo-brands .brands-box img {
     padding: 5px;
+}
+/*
+--- HEADER Navigation bar ---
+*/
+.container.navbar .navmenu {
+    margin-left: 50px;
+}
+.container.navbar .navmenu a {
+    color: #C99902;
+    opacity: 0.8;
+    padding: 12px;
+    border-radius: 5px;
+}
+.container.navbar .navmenu a:first-child {
+    opacity: 1;
+    color: #fff;
+    background-color: #c99902;
+}
+.container.navbar .navmenu a:hover {
+    opacity: 1;
+    color: #fff;
+    background-color: #c99902;
+    transition: 400ms;
+}
+.container.navbar .search-cart {
+    width: 30%;
+}
+.container.navbar .search-bar {
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    padding: 5px;
+}
+.container.navbar .search-bar  input {
+    font-size: 16px;
+    padding: 0 10px;
+    color: #C99902;
+}
+.container.navbar .search-bar i{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+    cursor: pointer;
+}
+.container.navbar .cart i {
+    font-size: 30px;
+    color: #C99902;
+}
+.cart-info {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: rgb(243, 86, 86);
+    color: #fff;
+    font-size: 12px;
+    justify-content: center;
 }
