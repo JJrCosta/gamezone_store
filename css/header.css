@@ -94,7 +94,7 @@
 /*
 --- HEADER Navigation bar ---
 */
-.container.navbar {
+.header .container.navbar {
     justify-content: space-between;
 }
 .container.navbar .navmenu {
