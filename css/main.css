@@ -1,19 +1,23 @@
 /*
 --- BANNER ---
 */
-.main {
+body {
     background-color: #1B133A;
 }
 .main .container {
-    width: 90%;
+    background: url('../img/logo/bg-cashback.png') no-repeat top center fixed;
+    background-size: cover;
     margin: 0 auto;
+    width: 90%;
 }
 .main .banner {
+    height: 500px;
+    margin: 0 auto;
+    background-color: #1B133A;
+}
+.banner .bg-banner {
     background: url('../img/folders/cover_RE4.png') no-repeat top left;
     background-size: cover;
-    height: 550px;
-    width: 90%;
-    margin: 0 auto;
 }
 .banner .banner-info {
     padding: 30px;
@@ -24,7 +28,7 @@
     align-items: flex-start;
     flex-direction: column;
 }
-.banner .banner-info .container{
+.banner .banner-info .banner-container{
     justify-content: space-around;
     align-items: flex-start;
     flex-direction: column;
@@ -83,29 +87,32 @@
 }
 
 .main .latest-launch,
-.main .promo {
-    margin-top: 20px;
+.main .promo,
+.main .cashback {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 .main .name {
+    background-color: rgba(255, 255, 255, 0.4);
     text-align: center;
     color: #C99902;
+    text-shadow: 1px 1px 2px #000;
     font-size: 50px;
     padding: 20px;
     font-weight: normal;
 }
 .main .latest-launch {
-    height: 600px;
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 620px;
 }
-.latest-launch .container {
+.latest-launch .latest-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.latest-launch .container .card {
+.latest-launch .latest-container .card {
     margin-top: 20px;
 }
-.container .card .btn {
+.latest-container .card .btn {
     width: 350px;
     display: flex;
 }
@@ -121,12 +128,15 @@
     border-radius: 0;
 }
 
-.main .promo .container {
-    padding: 10px 0;
+.main .promo {
+    background-color: #1B133A;
+}
+.main .promo .promo-container {
+    padding: 20px 0;
     display: flex;
     justify-content: space-around;
 }
-.container .promo-card {
+.promo-container .promo-card {
     width: 300px;
     height: 124px;
     border: 2px solid rgba(255, 255, 255, 0.8);
@@ -165,7 +175,7 @@
 
 
 @media (max-width: 1024px) {
-    .latest-launch .container .card:last-child {
+    .latest-launch .latest-container .card:last-child {
         display: none;
     }
 }
@@ -176,10 +186,10 @@
     .main .banner {
         width: 100%;
     }
-    .latest-launch .container .card:nth-child(2) {
+    .latest-launch .latest-container .card:nth-child(2) {
         display: none;
     }
-    .container .promo-card:nth-child(2) {
+    .promo-container .promo-card:nth-child(2) {
         display: none;
     }
 }
@@ -188,8 +198,8 @@
         width: 100%;
     }
     .banner .banner-info {
+        justify-content: center;
         width: 100%;
-        padding-left: 10px;
     }
     .banner-info p {
         max-width: 99%;
@@ -200,7 +210,7 @@
     .banner-info .banner-buttons a {
         padding: 15px 0;
     }
-    .container .promo-card:nth-child(3) {
+    .promo-container .promo-card:nth-child(3) {
         display: none;
     }
 }
