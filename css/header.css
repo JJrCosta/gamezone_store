@@ -1,5 +1,5 @@
 /*
---- FLEX SETUP ---
+--- SETUP ---
 */
 .flx-align-center {
     display: flex;
@@ -14,11 +14,13 @@
 /*
 --- HEADER ---
 */
+.header {
+    background-color: #1B133A;
+}
 .header .container {
     width: 100%;
-    background-color: #1B133A;
     height: 40px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 .header .container.navbar {
     height: 60px;
@@ -79,6 +81,7 @@
 */
 .logo-brands .logo > img {
     height: 165px;
+    margin-top: -8px;
 }
 /*
 --- Brands Box---
@@ -166,6 +169,11 @@
 .mobile-btn i {
     font-size: 30px;
     color: #C99902;
+}
+.main .container,
+.header .container {
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 @media (max-width: 1080px) {
