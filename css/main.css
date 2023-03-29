@@ -426,6 +426,9 @@ body,
     }
 }
 @media (max-width: 769px) {
+    .header .container.navbar {
+        padding: 0;
+    }
     .main .container {
         width: 100%;
     }
@@ -461,8 +464,6 @@ body,
     }
     .promo-container .promo-card:nth-child(3) {
         display: none;
-    }
-    .cashback .cashback-container {
     }
     .cashback-container .form {
         background-image: linear-gradient(
