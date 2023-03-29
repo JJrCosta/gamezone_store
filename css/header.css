@@ -99,9 +99,7 @@
 */
 .header .container.navbar {
     justify-content: space-between;
-}
-.container.navbar .navmenu {
-    margin-left: 50px;
+    padding: 0 50px;
 }
 .container.navbar .navmenu a {
     color: #C99902;
