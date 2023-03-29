@@ -294,7 +294,6 @@ body,
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    height: 400px;
 }
 .cashback-container .form,
 .cashback-container .info-cashback {
@@ -339,8 +338,7 @@ body,
 .cashback-container .form {
     background: url('../img/folders/bg-form.png') no-repeat center center;
     background-size: cover;
-    margin-right: -50px;
-    margin-left: -1138px;
+    height: 400px;
 }
 .cashback-container .form form {
     display: flex;
@@ -370,6 +368,7 @@ body,
     cursor: pointer;
     font-size: 18px;
     background-color: #2f18ad;
+    padding: 15px 0;
 }
 .form form button:hover {
     background-color: #144cb4;
@@ -378,19 +377,52 @@ body,
 /*
 --- FOOTER ---
 */
-
-
-
-
-
-
+.footer .footer-container {
+    width: 88%;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.8);
+}
+.footer .footer-top,
+.footer .footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+.footer .footer-top h4 {
+    margin-bottom: 10px;
+    font-weight: 100;
+    font-size: 20px;
+}
+.footer .footer-top .contact a {
+    display: block;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 5px;
+}
+.footer .footer-top .adress {
+    margin-bottom: 5px;
+}
+.footer-bottom .footer-logo {
+    background: url('../img/logo/logo.png') no-repeat center;
+    background-size: cover;
+    height: 100px;
+    width: 120px;
+}
+.footer-bottom .footer-menu a {
+    color: rgba(255, 255, 255, 0.8);
+    padding-left: 20px;
+}
+.footer-bottom .footer-menu a:hover {
+    text-decoration: underline;
+}
+/*
+--- RESPONSIVE ---
+*/
 @media (max-width: 1024px) {
     .latest-launch .latest-container .card:last-child {
         display: none;
-    }
-    .cashback-container .form,
-    .cashback-container .info-cashback {
-        margin: 0;
     }
 }
 @media (max-width: 769px) {
@@ -439,8 +471,8 @@ body,
             rgba(255, 255, 255, 0.2),
             rgba(255, 255, 255, 0.1),
             rgba(255, 255, 255, 0.2),
-            rgba(255, 255, 255, 0.3));
-        margin: 0;
+            rgba(255, 255, 255, 0.3)
+        );
     }
     .cashback-container .info-cashback {
         background-image: url('../img/folders/bg-pte-mobile.png');
@@ -448,5 +480,8 @@ body,
     }
     .cashback-container .info-cashback p {
         padding: 30px 10px;
+    }
+    .footer .footer-bottom {
+        justify-content: center;
     }
 }
