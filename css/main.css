@@ -173,6 +173,101 @@ body {
     right: 0;
 }
 
+.more-options .more-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.more-container .card-options {
+    background-repeat:  no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 550px;
+    height: 310px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+}
+.more-container .card-options a {
+    background-repeat:  no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 200px;
+    margin-bottom: 30px;
+    line-height: 35px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: 1px 1px 2px #000;
+}
+.more-container .card-options p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.card-options.opt1 {
+    background-image: url('../img/folders/dmc5.png');
+}
+.card-options.opt1 a {
+    background-image: url('../img/icons/early-acs.png');
+}
+.card-options.opt1 a:hover {
+    background-image: url('../img/icons/gift-card.png');
+    transition: 300ms;
+}
+.card-options.opt1 p {
+    color: #87c8f7;
+}
+
+.card-options.opt2 {
+    background-image: url('../img/folders/snes.png');
+}
+.card-options.opt2 a {
+    background-image: url('../img/icons/retro.png');
+}
+.card-options.opt2 a:hover {
+    background-image: url('../img/icons/cashback.png');
+    transition: 300ms;
+}
+.card-options.opt2 p {
+    color: #EF78AA;
+}
+
+.card-options.opt3 {
+    background-image: url('../img/folders/god-of-war.png');
+}
+.card-options.opt3 a {
+    background-image: url('../img/icons/cashback.png');
+}
+.card-options.opt3 a:hover {
+    background-image: url('../img/icons/early-acs.png');
+    transition: 300ms;
+}
+.card-options.opt3 p {
+    color: #F8E008;
+}
+
+.card-options.opt4 {
+    background-image: url('../img/folders/gift-cards.png');
+}
+.card-options.opt4 a {
+    background-image: url('../img/icons/gift-card.png');
+}
+.card-options.opt4 a:hover {
+    background-image: url('../img/icons/retro.png');
+    transition: 300ms;
+}
+.card-options.opt4 p {
+    color: #08F868;
+}
+
+
+
+
 
 @media (max-width: 1024px) {
     .latest-launch .latest-container .card:last-child {
@@ -196,6 +291,9 @@ body {
 @media (max-width: 426px) {
     .main .banner {
         width: 100%;
+    }
+    .main .name {
+        font-size: 30px;
     }
     .banner .banner-info {
         justify-content: center;
