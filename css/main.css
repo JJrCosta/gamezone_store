@@ -1,7 +1,10 @@
 /*
 --- BANNER ---
 */
-body {
+body,
+.main .banner,
+.main .promo,
+.main .cashback {
     background-color: #1B133A;
 }
 .main .container {
@@ -10,10 +13,12 @@ body {
     margin: 0 auto;
     width: 90%;
 }
+/*
+--- SECTION BANNER ---
+*/
 .main .banner {
     height: 500px;
     margin: 0 auto;
-    background-color: #1B133A;
 }
 .banner .bg-banner {
     background: url('../img/folders/cover_RE4.png') no-repeat top left;
@@ -85,9 +90,12 @@ body {
 #buy:hover {
     background-color: #dbb434;
 }
-
+/*
+--- SECTION LATEST LAUNCH ---
+*/
 .main .latest-launch,
 .main .promo,
+.main .more-options,
 .main .cashback {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -127,10 +135,9 @@ body {
     text-shadow: 1px 1px 2px #000;
     border-radius: 0;
 }
-
-.main .promo {
-    background-color: #1B133A;
-}
+/*
+--- SECTION PROMO ---
+*/
 .main .promo .promo-container {
     padding: 20px 0;
     display: flex;
@@ -172,20 +179,23 @@ body {
     top: 0;
     right: 0;
 }
-
+/*
+--- SECTION MORE OPTIONS ---
+*/
 .more-options .more-container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
+    backdrop-filter: blur(10px);
 }
 .more-container .card-options {
     background-repeat:  no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     width: 550px;
     height: 310px;
-    margin-top: 30px;
+    margin: 15px 0;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -209,6 +219,9 @@ body {
     margin-bottom: 10px;
     background-color: rgba(0, 0, 0, 0.3);
 }
+/*
+--- Card Early Acess ---
+*/
 .card-options.opt1 {
     background-image: url('../img/folders/dmc5.png');
 }
@@ -222,7 +235,9 @@ body {
 .card-options.opt1 p {
     color: #87c8f7;
 }
-
+/*
+--- Card Retro ---
+*/
 .card-options.opt2 {
     background-image: url('../img/folders/snes.png');
 }
@@ -236,7 +251,9 @@ body {
 .card-options.opt2 p {
     color: #EF78AA;
 }
-
+/*
+--- Card CashBack ---
+*/
 .card-options.opt3 {
     background-image: url('../img/folders/god-of-war.png');
 }
@@ -250,7 +267,9 @@ body {
 .card-options.opt3 p {
     color: #F8E008;
 }
-
+/*
+--- Card Gift Cards ---
+*/
 .card-options.opt4 {
     background-image: url('../img/folders/gift-cards.png');
 }
@@ -264,6 +283,102 @@ body {
 .card-options.opt4 p {
     color: #08F868;
 }
+/*
+--- SECTION CASHBACK ---
+*/
+.cashback .bg-cashback {
+    margin: 20px 0;
+}
+.cashback .cashback-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 400px;
+}
+.cashback-container .form,
+.cashback-container .info-cashback {
+    width: 600px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/*
+--- Div Info ---
+*/
+.cashback-container .info-cashback {
+    background: url('../img/folders/bg-pay-to-win.png') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+}
+.cashback-container .info-cashback p {
+    max-width: 500px;
+    padding-top: 15px;
+    letter-spacing: 1px;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    font-weight: 100;
+}
+.cashback-container .info-cashback a {
+    margin-top: 15px;
+    background-color: #D628C4;
+    padding: 10px 30px;
+    color: #fff;
+    border-radius: 20px;
+}
+.cashback-container .info-cashback a:hover  {
+    background-color: #8228d6;
+    transition: 500ms;
+}
+/*
+--- Div Form ---
+*/
+.cashback-container .form {
+    background: url('../img/folders/bg-form.png') no-repeat center center;
+    background-size: cover;
+    margin-right: -50px;
+    margin-left: -1138px;
+}
+.cashback-container .form form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 350px;
+}
+.cashback-container .form h3 {
+    color: rgba(255, 255, 255, 0.8);
+    padding: 20px 0;
+    letter-spacing: 2px;
+}
+.form form input,
+.form form textarea,
+.form form button {
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    line-height: 20px;
+    width: 100%;
+    padding: 5px 15px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 20px;
+    resize: none;
+}
+.form form button {
+    cursor: pointer;
+    font-size: 18px;
+    background-color: #2f18ad;
+}
+.form form button:hover {
+    background-color: #144cb4;
+    transition: 500ms;
+}
+/*
+--- FOOTER ---
+*/
+
 
 
 
@@ -272,6 +387,10 @@ body {
 @media (max-width: 1024px) {
     .latest-launch .latest-container .card:last-child {
         display: none;
+    }
+    .cashback-container .form,
+    .cashback-container .info-cashback {
+        margin: 0;
     }
 }
 @media (max-width: 769px) {
@@ -310,5 +429,24 @@ body {
     }
     .promo-container .promo-card:nth-child(3) {
         display: none;
+    }
+    .cashback .cashback-container {
+    }
+    .cashback-container .form {
+        background-image: linear-gradient(
+            to left,
+            rgba(255, 255, 255, 0.3),
+            rgba(255, 255, 255, 0.2),
+            rgba(255, 255, 255, 0.1),
+            rgba(255, 255, 255, 0.2),
+            rgba(255, 255, 255, 0.3));
+        margin: 0;
+    }
+    .cashback-container .info-cashback {
+        background-image: url('../img/folders/bg-pte-mobile.png');
+        height: 450px;
+    }
+    .cashback-container .info-cashback p {
+        padding: 30px 10px;
     }
 }
