@@ -440,6 +440,8 @@ body,
     }
     .promo-container .promo-card:nth-child(2) {
         display: none;
+    }.footer .footer-container {
+        width: 95%;
     }
 }
 @media (max-width: 426px) {
@@ -484,5 +486,6 @@ body,
     }
     .footer .footer-bottom {
         justify-content: center;
+        margin-bottom: 50px;
     }
 }
